@@ -30,7 +30,7 @@ if(Page=='Home Page'):
     find correlation between the features and insurance cost charges.
     """)
     #The below code will show an image and below it there will be caption
-    image=Image.open('capture.JPG')
+    image=Image.open('Capture.JPG')
     st.image(image)
 
 if(Page=='Flow-Chart'):
@@ -145,7 +145,7 @@ if(Page=='Predictor'):
         df = user_input_features()
     
         #Loading the data and cleaning it
-        data_path=r'C:\Users\Rutu Desai\AppData\Local\Programs\Python\Python37\Project\Insurance Cost\insurance.csv'
+        data_path=r'./insurance.csv'
         dataset=pd.read_csv(data_path)
         from sklearn.preprocessing import LabelEncoder
         le=LabelEncoder()
